@@ -17,7 +17,7 @@ To make code easy to run successfully, we debug the files carefully. Generally s
 (2) Run any xxx.py directly
 
 
-NOTE:intact datasets should be downloaded in https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ (UCR repository: univariate time series datasets) and https://github.com/titu1994/MLSTM-FCN/releases (Multivariate time series datasets) 
+NOTE:intact datasets can be downloaded in https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ (UCR repository: univariate time series datasets) and https://github.com/titu1994/MLSTM-FCN/releases (Multivariate time series datasets) 
 
 
 # Paper of Code and Citation
