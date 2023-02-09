@@ -101,4 +101,6 @@ Thanks for the following references sincerely.
 github: https://github.com/cauchyturing/UCR_Time_Series_Classification_Deep_Learning_Baseline
    
 github: https://github.com/titu1994/MLSTM-FCN/releases
+
+UCR:https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ 
    
