@@ -53,12 +53,14 @@ Fan L, Chai Y, Chen X. Multi-Scale Ensemble Booster for Improving Existing TSD C
 
  
 Method:
+
 (1) MEB-ResNet: code\Ablation_experiment_on_128_UCR\MEB-ResNet_128_UCR.py
 
 (2) MEB-FCN:code\Ablation_experiment_on_128_UCR\MEB-FCN_128_UCR.py
 
 
 Our proposed metric for evaluating time series classification peformance of methods on mutiple datasets:
+
 
 (1) MACE: Section 4.1 : the def MACE(x1,num_classes) in code\table\Table_3_4_5_6.py
 
