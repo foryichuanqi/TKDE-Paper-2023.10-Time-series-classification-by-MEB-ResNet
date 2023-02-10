@@ -603,26 +603,30 @@ for (num,each) in enumerate(flist[run_begin_index:]):
         
         
         log = pd.DataFrame(hist.history)
-        log.to_excel(r"F:\桌面11.17\project\fluid_based_time_series_calssification\experiments_result\log\{}_dataset_{}_log{}_time{}.xlsx".format(method_name,str(flist.index(each)),i,datetime.datetime.now().strftime('%Y%m%d%H%M%S')))
+        log.to_excel(last_last_path + r"/experiments_result/log/{}_dataset_{}_log{}_time{}.xlsx".format(method_name,str(flist.index(each)),i,datetime.datetime.now().strftime('%Y%m%d%H%M%S')))
         
-        print(log.loc[log[syn_loss].idxmin][syn_loss], log.loc[log[syn_loss].idxmin][syn_val_acc])
-        error_record.append(1-log.loc[log[syn_loss].idxmin][syn_val_acc])
-        loss_record.append(log.loc[log[syn_loss].idxmin][syn_loss])
+        print(log.loc[log[syn_loss].idxmin()][syn_loss], log.loc[log[syn_loss].idxmin()][syn_val_acc])
+        error_record.append(1-log.loc[log[syn_loss].idxmin()][syn_val_acc])
+        loss_record.append(log.loc[log[syn_loss].idxmin()][syn_loss])
 #        with open(r"F:\桌面11.17\project\fluid_based_time_series_calssification\experiments_result\log\{}_dataset_{}_log{}.txt".format(method_name,str(flist.index(each)),i), 'wb') as file_txt:
 ##        with open(r"F:\桌面11.17\project\fluid_based_time_series_calssification\experiments_result\log\{}_dataset_{}_log{}_time{}.txt".format(method_name,str(flist.index(each)),i,str(datetime.datetime.now())), 'wb') as file_txt:
 #            pickle.dump(hist.history, file_txt)
         
-        file = open(r"F:\桌面11.17\project\fluid_based_time_series_calssification\experiments_result\method_error_txt\{}.txt".format(method_name), 'a')
-        # file.write( str(flist.index(each))+'error:'+'    '+str('%.5f'%(1-log.loc[log[syn_loss].idxmin][syn_val_acc]))+'     ')
-        file.write( str(flist.index(each))+'error:'+'    '+str('%.5f'%(1-log.loc[log[syn_loss].idxmin][syn_val_acc]))+'     '+'loss:'+str('%.8f'%(log.loc[log[syn_loss].idxmin][syn_loss]))+'     ')
-#        file.write( 'error:'+'   '+str('%.5f'%(1-log.loc[log['loss'].idxmin]['val_acc']))+'        '+'corresponding_min_loss:'+'   '+str('%.5f'%log.loc[log['loss'].idxmin]['loss']) +'        '+str(flist.index(each))+'        ' +each +'\n')
-#        file.write( 'error:'+'   '+str('%.5f'%(1-log.loc[log['loss'].idxmin]['val_acc']))+'        '+'corresponding_min_loss:'+'   '+str('%.5f'%log.loc[log['loss'].idxmin]['loss']) +'        '+str(flist.index(each))+'        ' +each +'\n')
+        file = open(last_last_path + r"/experiments_result/method_error_txt/{}.txt".format(method_name), 'a')
+        # file.write( str(flist.index(each))+'error:'+'    '+str('%.5f'%(1-log.loc[log[syn_loss].idxmin()][syn_val_acc]))+'     ')
+        file.write( str(flist.index(each))+'error:'+'    '+str('%.5f'%(1-log.loc[log[syn_loss].idxmin()][syn_val_acc]))+'     '+'loss:'+str('%.8f'%(log.loc[log[syn_loss].idxmin()][syn_loss]))+'     ')
+#        file.write( 'error:'+'   '+str('%.5f'%(1-log.loc[log['loss'].idxmin()]['val_acc']))+'        '+'corresponding_min_loss:'+'   '+str('%.5f'%log.loc[log['loss'].idxmin()]['loss']) +'        '+str(flist.index(each))+'        ' +each +'\n')
+#        file.write( 'error:'+'   '+str('%.5f'%(1-log.loc[log['loss'].idxmin()]['val_acc']))+'        '+'corresponding_min_loss:'+'   '+str('%.5f'%log.loc[log['loss'].idxmin()]['loss']) +'        '+str(flist.index(each))+'        ' +each +'\n')
     
         file.close()
 
         print('!!!!!!!!!!!!!!!!  {} {} {}::runtime:{}____min_error:{}'.format(method_name,num,each,i,'%.5f'%min(error_record)))
-
-    file = open(r"F:\桌面11.17\project\fluid_based_time_series_calssification\experiments_result\method_error_txt\{}.txt".format(method_name), 'a')
+        keras.backend.clear_session()
+        if (1-log.loc[log[syn_loss].idxmin()][syn_val_acc])==0:
+            
+            break
+        keras.backend.clear_session()
+    file = open(last_last_path + r"/experiments_result/method_error_txt/{}.txt".format(method_name), 'a')
     file.write('min_error:'+'     '+ str('%.5f'%(min(error_record)))+'     '+'     '+str(flist.index(each))+'        ' +each +'\n')
     file.close()
     error_record=[]
