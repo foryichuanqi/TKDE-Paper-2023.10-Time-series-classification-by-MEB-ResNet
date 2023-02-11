@@ -4,6 +4,10 @@ We proposed a performance enhancement framework called multi-scale ensemble boos
 
 In MEB, we proposed an easy-to-combine network structure without changing any of their structure and hyperparameters, only needed to set one hyperparameter, consisting of multi-scale transformation and multi-output decision fusion. Then, a probability distribution co-evolution strategy is proposed to attain the optimal label probability distribution. We conducted numerous ablation experiments of MEB on 128 univariate datasets and 29 multivariate datasets and comparative experiments with 11 state-of-the-art methods, which demonstrated the significant performance improvement ability of MEB and the most advanced performance of the model enhanced by MEB, respectively. Furthermore, to figure out why MEB can improve model performance, we provided a chain of interpretability analyses.
 
+ ![image](https://user-images.githubusercontent.com/48144488/218240414-6f22bef8-f6ae-4205-9325-4cc44bb50e7b.png)
+
+![image](https://user-images.githubusercontent.com/48144488/218240457-3f706b3f-677f-4f79-8730-a0cf8a053a84.png)
+
 
 # Easy to run successfully
 To make code easy to run successfully, we debug the files carefully. Generally speaking, if environments are satisfied, you can directly run all the xxx.py files inside after decompressing the compressed package without changing any code.
