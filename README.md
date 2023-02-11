@@ -1,6 +1,6 @@
 # Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers
 
-We proposed a performance enhancement framework called multi-scale ensemble booster (MEB), helping existing time series data classifiers achieve performance leaps. Besides, we proposed a new metric for evaluating time series classification peformance of methods on mutiple datasets, called MACE.
+We proposed a highly easy-to-use performance enhancement framework called multi-scale ensemble booster (MEB), helping existing time series data classifiers achieve performance leaps. Besides, we proposed a new metric for evaluating time series classification peformance of methods on mutiple datasets, called MACE.
 
 In MEB, we proposed an easy-to-combine network structure without changing any of their structure and hyperparameters, only needed to set one hyperparameter, consisting of multi-scale transformation and multi-output decision fusion. Then, a probability distribution co-evolution strategy is proposed to attain the optimal label probability distribution. We conducted numerous ablation experiments of MEB on 128 univariate datasets and 29 multivariate datasets and comparative experiments with 11 state-of-the-art methods, which demonstrated the significant performance improvement ability of MEB and the most advanced performance of the model enhanced by MEB, respectively. Furthermore, to figure out why MEB can improve model performance, we provided a chain of interpretability analyses.
 
