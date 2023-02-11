@@ -15,7 +15,7 @@ To make code easy to run successfully, we debug the files carefully. Generally s
  
 (2) Run any xxx.py directly        
 
-NOTE:intact datasets can be downloaded in https://github.com/foryichuanqi/Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers/releases/tag/v1.0.0
+NOTE:  datasets can be downloaded in https://github.com/foryichuanqi/Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers/releases/tag/v1.0.0
 
 Dataset reference website: https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ (UCR repository: univariate time series datasets) and https://github.com/titu1994/MLSTM-FCN/releases (Multivariate time series datasets) 
 
