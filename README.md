@@ -19,7 +19,7 @@ To make code easy to run successfully, we debug the files carefully. Generally s
 
 (2) Unzip MEB.zip
 
-(2) Run any xxx.py directly        
+(3) Run any xxx.py directly        
 
 NOTE:  complete datasets can be downloaded in https://github.com/foryichuanqi/Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers/releases/tag/v1.0.0
 
