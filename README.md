@@ -15,8 +15,8 @@ In MEB, we proposed an easy-to-combine network structure without changing any of
 # Easy to run successfully
 To make code easy to run successfully, we debug the files carefully. Generally speaking, if environments are satisfied, you can directly run all the xxx.py files inside after decompressing the compressed package without changing any code.
 
-(1) Unzip Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers.zip.
- 
+(1) Download and rename Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers.zip to MEB.zip (Rename to avoid errors caused by long directories)
+(2) Unzip Multi-Scale-Ensemble-Booster.zip
 (2) Run any xxx.py directly        
 
 NOTE:  complete datasets can be downloaded in https://github.com/foryichuanqi/Multi-Scale-Ensemble-Booster-for-Improving-Existing-Time-Series-Data-Classifiers/releases/tag/v1.0.0
