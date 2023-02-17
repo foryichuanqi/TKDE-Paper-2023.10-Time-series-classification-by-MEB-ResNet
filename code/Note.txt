@@ -1,2 +1,0 @@
-1 dixmin to dixmin()   2  val_acc to val_accuracy  3 \ to /   4  2018_85 to 2018_128  5 iuput_shape[-1] to iuput_shape.shape[-1]
-
